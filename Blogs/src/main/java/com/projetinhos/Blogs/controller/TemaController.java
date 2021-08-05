@@ -72,6 +72,7 @@ public class TemaController {
 			return ResponseEntity.ok().body("Usuario deletado more");
 		}
 		else {
+			return null;
 		}
 		
 		
