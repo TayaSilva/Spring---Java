@@ -51,13 +51,7 @@ public class ProdutoController {
 		public ResponseEntity<ProdutoModel> put (@RequestBody ProdutoModel produtoModel){
 			return ResponseEntity.ok(repository.save(produtoModel));
 	}
-		/*
-		 * Posso fazer desse jeito tbm 
-		@DeleteMapping("/{id}")
-		public void delete(@PathVariable long id) {
-			repository.deleteById(id);
-		}
-	*/
+
 		
 		@DeleteMapping("/{id}")
 		public ResponseEntity<String> deletarById (@PathVariable long id) {
